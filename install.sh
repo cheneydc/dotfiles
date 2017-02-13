@@ -28,4 +28,4 @@ else
 fi
 
 echo "Symlinking other dotfiles"
-ln -nsvf $HOME/.cheneydc-dotfiles/.* $HOME 
+cp --backup=simple -v $HOME/.cheneydc-dotfiles/.* $HOME 
