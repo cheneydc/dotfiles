@@ -2,6 +2,9 @@
 
 HOME_DIR="~"
 
+echo "Install zsh..."
+apt-get install -y zsh
+
 echo "Install oh-my-zsh..."
 if [ -d $HOME_DIR/.oh-my-zsh ]; then
     echo "You already have Oh My Zsh installed. You'll need to remove $HOME_DIR/.oh-my-zsh if you want to reinstall"
