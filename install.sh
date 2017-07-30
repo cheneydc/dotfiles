@@ -32,3 +32,5 @@ echo "Symlinking other dotfiles"
 cp --backup=simple -v $HOME/.cheneydc-dotfiles/.tmux.conf $HOME 
 cp --backup=simple -v $HOME/.cheneydc-dotfiles/.vimrc $HOME 
 cp --backup=simple -v $HOME/.cheneydc-dotfiles/.zshrc $HOME 
+
+wget http://github.com/cheneydc/dotfiles/raw/master/install_vimtools.sh -O - | sh
