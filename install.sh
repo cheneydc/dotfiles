@@ -3,7 +3,7 @@
 HOME_DIR="~"
 
 echo "Install zsh..."
-apt-get install -y zsh
+sudo apt-get install -y zsh
 
 echo "Install oh-my-zsh..."
 if [ -d $HOME_DIR/.oh-my-zsh ]; then
@@ -15,13 +15,13 @@ else
 fi
 
 echo "Install oh-my-zsh extra plugins..."
-apt-get install autojump
+sudo apt-get install autojump
 
 if [ -d $HOME_DIR/.cheneydc-dotfiles]; then
     echo "Updatig cheneydc's dotfiles..."
-    cd $HOME_DIR/.cheneydc-dotfiles
+    pushd $HOME_DIR/.cheneydc-dotfiles
     /usr/bin/env git pull
-    cd $HOME_DIR
+    popd
 else
     echo "Cloning cheneydc's dotfiles..."
     /usr/bin/env git clone git://github.com/cheneydc/dotfiles.git $HOME_DIR/.cheneydc-dotfiles
