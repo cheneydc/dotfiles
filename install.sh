@@ -23,7 +23,9 @@ if [ -d $HOME/.cheneydc-dotfiles ]; then
     popd
 else
     echo "Cloning cheneydc's dotfiles..."
-    git clone git://github.com/cheneydc/dotfiles.git $HOME/.cheneydc-dotfiles
+    pushd $HOME
+    git clone git://github.com/cheneydc/dotfiles.git .cheneydc-dotfiles
+    popd
 fi
 
 echo "Symlinking other dotfiles"
