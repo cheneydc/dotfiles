@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 echo "Install zsh..."
 sudo apt-get install -y zsh
 
@@ -34,3 +33,4 @@ cp --backup=simple -v $HOME/.cheneydc-dotfiles/.vimrc $HOME
 cp --backup=simple -v $HOME/.cheneydc-dotfiles/.zshrc $HOME 
 
 wget http://github.com/cheneydc/dotfiles/raw/master/install_vimtools.sh -O - | sh
+sudo apt-get install vim-nox vim-nox-py2 -y
