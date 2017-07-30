@@ -17,14 +17,14 @@ fi
 echo "Install oh-my-zsh extra plugins..."
 sudo apt-get install autojump
 
-if [ -d $HOME_DIR/.cheneydc-dotfiles]; then
+if [ -d $HOME_DIR/.cheneydc-dotfiles ]; then
     echo "Updatig cheneydc's dotfiles..."
     pushd $HOME_DIR/.cheneydc-dotfiles
     /usr/bin/env git pull
     popd
 else
     echo "Cloning cheneydc's dotfiles..."
-    /usr/bin/env git clone git://github.com/cheneydc/dotfiles.git $HOME_DIR/.cheneydc-dotfiles
+    git clone git://github.com/cheneydc/dotfiles.git $HOME_DIR/.cheneydc-dotfiles
 fi
 
 echo "Symlinking other dotfiles"
