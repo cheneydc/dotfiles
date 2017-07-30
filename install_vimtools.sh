@@ -49,8 +49,9 @@ git clone $YCM_URL ${BUNDLE_DIR}/YouCompleteMe
 sudo apt-get -y install cmake 
 sudo apt-get -y install build-essential
 sudo apt-get -y install python-dev
-cd ${BUNDLE_DIR}/YouCompleteMe && git submodule update --init --recursive && sudo ./install.py
-cd -
+pushd ${BUNDLE_DIR}/YouCompleteMe
+git submodule update --init --recursive && sudo ./install.py
+popd
 echo
 
 echo "Setup vimrc..."
