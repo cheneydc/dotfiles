@@ -29,4 +29,6 @@ else
 fi
 
 echo "Symlinking other dotfiles"
-cp --backup=simple -v $HOME/.cheneydc-dotfiles/.* $HOME 
+cp --backup=simple -v $HOME/.cheneydc-dotfiles/.tmux.conf $HOME 
+cp --backup=simple -v $HOME/.cheneydc-dotfiles/.vimrc $HOME 
+cp --backup=simple -v $HOME/.cheneydc-dotfiles/.zshrc $HOME 
