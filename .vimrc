@@ -73,7 +73,7 @@ filetype plugin indent on
 set cul
 set t_Co=256  
 "hi CursorLine cterm=NONE ctermbg=darkgray guibg=#272727 "guifg=white  "ctermfg ->  set the font color
-hi CursorLine cterm=NONE ctermbg=lightgray  guibg=#6B6B6B "guifg=white  "ctermfg ->  set the font color
+"hi CursorLine cterm=NONE ctermbg=lightgray  guibg=#6B6B6B "guifg=white  "ctermfg ->  set the font color
 
 set nu
 syntax on
